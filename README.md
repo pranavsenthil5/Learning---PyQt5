@@ -1,1 +1,1 @@
-# Learning---PyQt5
+# Learning-PyQt5
