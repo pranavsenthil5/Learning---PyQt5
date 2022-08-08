@@ -8,7 +8,7 @@ if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     m = folium.Map(
         # location=[45.5236, -122.6750], tiles="Stamen Toner", zoom_start=13
-        location=[38.8188, -78.5365],  zoom_start=13
+        location=[38.8188, -78.5365],  zoom_start=14
     )
     # tile = folium.TileLayer(
     #     tiles='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
