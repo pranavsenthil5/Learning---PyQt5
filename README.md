@@ -1,21 +1,25 @@
 # Compilation of my Learnings in PyQt5
 
-## setup and installation Process
+## Setup and Installation Process
 
 1. Created a virtual environment in my project folder and activated it.
 
 ```sh
-python3 -m venv /path/to/new/virtual/environment
-source /path/to/new/virtual/environment/bin/activate
+python3 -m venv venv
+# The last argument is the path to the virtual environment
+
+source venv/bin/activate
 ```
 
-2. Updgraded python and updated pip
+2. Updated pip
 
 ```sh
 python3 -m pip install --upgrade pip
 ```
 
 3. Tried installing PyQt5 in virtual environment and failed
+
+**[ If it works you are good to go ]**
 
 ```sh
 pip install pyqt5
@@ -32,10 +36,16 @@ echo 'export PATH="/usr/local/opt/qt/bin:$PATH"' >> ~/.zshrc
 
 [Building pyqt5](http://www.niladicpodcast.com/blog/2017/8/install-pyqt5-inside-a-virtual-environment/) might have been another option but I didn't want to get into that.
 
-4. Installed pyqt5 globally using homebrew
+4. Installed pyqt5 globally using homebrew (the previous step is needed for this)
 
 ```sh
 brew install pyqt@5
 ```
 
 Although it beats the point of virtual environments, I found this to be the only way.
+
+5. Allowed the virtual environment to access global packages ([Stack Overflow](https://stackoverflow.com/questions/25701133/how-to-tell-homebrew-to-install-inside-virtualenv#:~:text=What%20you%20can%20do%2C%20if,existing%20virtual%20environments%2C%20as%20well.))
+
+```sh
+python3 -m venv --system-site-packages venv
+```
