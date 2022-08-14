@@ -16,7 +16,7 @@ for i in range(3):
         else:
             layout.addWidget(QPushButton("Botton (%d, %d)" % (i, j)), i, j)
 
-layout.addWidget(QPushButton("Botton (2, 1) + 2 Columns span"), 2, 1, 1, 2)
+layout.addWidget(QPushButton("Botton (2, 1) + 2 Columns span"), 2, 1, 1, 3)
 window.setLayout(layout)
 
 window.show()

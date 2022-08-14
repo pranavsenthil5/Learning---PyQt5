@@ -13,8 +13,8 @@ class Window(QMainWindow):
         self._createStatusBar()
 
     def _createMenu(self):
-        self.menu = self.menuBar().addMenu("&Menu")
-        self.menu.addAction('&Exit', self.close)
+        self.menu = self.menuBar().addMenu("& Menu")
+        self.menu.addAction('& Exit', self.close)
 
     def _createToolBar(self):
         tools = QToolBar()
@@ -31,5 +31,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     win = Window()
     win.show()
-    sys.exit(app.exec_())
     sys.exit(app.exec_())

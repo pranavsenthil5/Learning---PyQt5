@@ -9,9 +9,9 @@ window.setWindowTitle('QVBoxLayout')
 
 layout = QVBoxLayout()
 
-layout.addWidget(QPushButton("Top"))
-layout.addWidget(QPushButton("Middle"))
-layout.addWidget(QPushButton("Bottom"))
+layout.addWidget(QPushButton("Top"), 1)
+layout.addWidget(QPushButton("Middle"), 2)
+layout.addWidget(QPushButton("Bottom"), 3)
 
 window.setLayout(layout)
 
